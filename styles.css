@@ -1,0 +1,55 @@
+/* Masonry Layout project stylesheet 10/17/2024 */
+
+
+body {
+	background-color: black;
+}
+
+main {
+	/*border: 2px yellow solid;*/
+	max-width: 1300px;
+	margin: 0px auto;
+}
+
+h2 {
+	text-align: center;
+	color: orange;
+	text-shadow: ghostwhite 2px 1px 8px;
+	font-family: "verdana", sans-serif;
+	font-size: 1.5em;
+	font-variant: small-caps;
+}
+
+footer {
+	text-align: right;
+	color: ghostwhite;
+	font-family: "verdana", sans-serif;
+	font-size: 1em;
+	font-variant: small-caps;
+}
+
+img	{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+section#gallery {
+	/*border: 3px dashed red;*/
+	column-count: 3;
+	column-gap: 20px;
+	/*column-rule: 3px solid white;*/
+}
+
+div.item {
+	margin-bottom: 8px;
+}
+
+/* Media query for tablet or smaller screens*/
+
+@media only screen and (max-width: 760px) {
+	section#gallery {
+		column-count: 2;
+		column-gap: 10px;
+	}
+}
